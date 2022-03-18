@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="Bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="customize.css">
+    <script type="text/javascript" src="https://cdn.rawgit.com/ricmoo/aes-js/e27b99df/index.js"></script>
+    <script type="text/javascript" src="sha256.js"></script>
+  </head>
+  <body>
+    <script type="module">
+        import {div} from './js/components/login.js';
+        import {page_var} from "./js/general.js";
+        page_var['root'] = new div(document.body);
+    </script>
+    
+  </body>
+</html>

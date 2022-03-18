@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binserv</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  
+  <link rel="icon" href="image/bin-icon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/2.1.0/json2html.min.js"></script>
+  <style>
+    html{ 
+      scroll-behavior: smooth;
+    }
+  </style>
+
+<script type="module">
+    
+  import {tree_to_obj} from "./wai_long_web_v1.js";
+
+  let tree_new_bin = [
+  {"tag":"header","class":"bg-color","children":[
+      {"tag":"nav","class":"navbar navbar-expand-lg navbar-light","children":[
+          {"tag":"div","class":"container","children":[
+              {"tag":"a","class":"navbar-brand","href":"#","children":[
+                  {"tag":"img","src":"image/binserv-logo-white.svg","alt":"","width":"200","height":"64","html":""}
+                ]},
+              {"tag":"button","class":"navbar-toggler ","type":"button","data-bs-toggle":"collapse","data-bs-target":"#navbarNav","aria-controls":"navbarNav","aria-expanded":"false","aria-label":"Toggle navigation","children":[
+                  {"tag":"span","class":"navbar-toggler-icon","html":""}
+                ]},
+              {"tag":"div","class":"collapse navbar-collapse d-md-flex justify-content-md-end","id":"navbarNav","children":[
+                  {"tag":"ul","class":"navbar-nav font-weight-bold","children":[
+                      {"tag":"li","class":"nav-item pl-md-5","children":[
+                          {"tag":"a","class":"nav-link","aria-current":"page","href":"#","html":"Home"}
+                        ]},
+                      {"tag":"li","class":"nav-item pl-md-5","children":[
+                          {"tag":"a","class":"nav-link","href":"#","html":"Blog"}
+                        ]},
+                      {"tag":"li","class":"nav-item pl-md-5","children":[
+                          {"tag":"a","class":"nav-link","href":"#about","html":"About"}
+                        ]},
+                      {"tag":"li","class":"nav-item pl-md-5","children":[
+                          {"tag":"a","class":"nav-link","href":"#contact","html":"Contact"}
+                        ]}
+                    ]}
+                ]}
+            ]}
+        ]}
+    ]},
+  {"tag":"section","class":"hero bg-color","children":[
+      {"tag":"div","class":"container col-xxl-10 px-4 py-5","children":[
+          {"tag":"div","class":"row flex-lg-row-reverse align-items-center g-5 py-5","children":[
+              {"tag":"div","class":"col-10 col-sm-8 col-lg-6","children":[
+                  {"tag":"img","src":"image/banner-hero.svg","class":"d-block mx-lg-auto img-fluid","width":"700","height":"500","html":""}
+                ]},
+              {"tag":"div","class":"col-lg-6","children":[
+                  {"tag":"h1","class":"display-5 fw-bold lh-1 mb-3 font-weight-bold text-white","children":[
+                      {"tag":"br","html":""}
+                    ]},
+                  {"tag":"p","class":"lead text-white mt-4","html":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit,             quod quibusdam illum quia fugit aperiam esse temporibus ad            quod quibusdam illum quia fugit aperiam esse temporibus ad             quod quibusdam illum quia fugit aperiam esse temporibus ad            sit amet consectetur adipisicing elit. Sit,            sit amet consectetur adipisicing elit. Sit,"},
+                  {"tag":"div","class":"d-grid gap-2 d-md-flex justify-content-md-start","children":[
+                      {"tag":"a","href":"#","class":"btn btn-primary btn-lg px-4 me-md-2 font-weight-bold text-white","html":"Start mining now"}
+                    ]}
+                ]}
+            ]}
+        ]}
+    ]},
+  {"tag":"section","id":"about","class":"bg-about py-5","children":[
+      {"tag":"h2","class":"display-4 text-center text-uppercase text-primary","html":"About Main Business"},
+      {"tag":"div","class":"container my-5","children":[
+          {"tag":"div","class":"row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center border-bottom border-primary justify-content-around","children":[
+              {"tag":"div","class":"col-lg-7 p-3 p-lg-5 pt-lg-3 border-left border-primary","children":[
+                  {"tag":"h2","class":"display-5 fw-bold lh-1 text-primary","html":"Mining machine purchasing and logistics services"},
+                  {"tag":"p","class":"lead","children":[
+                      {"tag":"br","html":""}
+                    ]}
+                ]},
+              {"tag":"div","class":"col-lg-4 p-0","children":[
+                  {"tag":"img","class":"py-md-4","src":"image/mining-machine_1.svg","alt":"","width":"100%","html":""}
+                ]}
+            ]}
+        ]},
+      {"tag":"div","class":"container my-5","children":[
+          {"tag":"div","class":"row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center border-bottom border-primary justify-content-around","children":[
+              {"tag":"div","class":"col-lg-7 p-3 p-lg-5 pt-lg-3 border-left border-primary","children":[
+                  {"tag":"h2","class":"display-5 fw-bold lh-1 text-primary","html":"Mining machine hosting"},
+                  {"tag":"p","class":"lead","children":[
+                      {"tag":"br","html":""}
+                    ]}
+                ]},
+              {"tag":"div","class":"col-lg-4 p-0","children":[
+                  {"tag":"img","class":"py-md-4","src":"image/mining-hosting-2.svg","alt":"","width":"100%","html":""}
+                ]}
+            ]}
+        ]},
+      {"tag":"div","class":"container my-5","children":[
+          {"tag":"div","class":"row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center border-bottom border-primary justify-content-around","children":[
+              {"tag":"div","class":"col-lg-7 p-3 p-lg-5 pt-lg-3 border-left border-primary","children":[
+                  {"tag":"h2","class":"display-5 fw-bold lh-1 text-primary","html":"Mine construction"},
+                  {"tag":"p","class":"lead","html":"Site, cost, environment, search and estimation,            Procurement and installation of hardware equipment, integrated mine container design"}
+                ]},
+              {"tag":"div","class":"col-lg-4 p-0","children":[
+                  {"tag":"img","class":"py-md-4","src":"image/mining-construction-3.svg","alt":"","width":"100%","html":""}
+                ]}
+            ]}
+        ]},
+      {"tag":"div","class":"container my-5","children":[
+          {"tag":"div","class":"row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center border-bottom border-primary justify-content-around","children":[
+              {"tag":"div","class":"col-lg-7 p-3 p-lg-5 pt-lg-3 border-left border-primary","children":[
+                  {"tag":"h2","class":"display-5 fw-bold lh-1 text-primary","html":"Mine management software"},
+                  {"tag":"p","class":"lead","children":[
+                      {"tag":"br","html":""}
+                    ]}
+                ]},
+              {"tag":"div","class":"col-lg-4 p-0","children":[
+                  {"tag":"img","class":"py-md-4","src":"image/mining-software-4.svg","alt":"","width":"100%","html":""}
+                ]}
+            ]}
+        ]}
+    ]},
+  {"tag":"section","id":"contact","class":"mt-5","children":[
+      {"tag":"div","class":"container","children":[
+          {"tag":"div","class":"row my-md-5","children":[
+              {"tag":"div","class":"col-md-6 p-0","children":[
+                  {"tag":"div","class":"card mb-3 border-0 shadow","children":[
+                      {"tag":"div","class":"row g-0 justify-content-md-center m-2","children":[
+                          {"tag":"div","class":"col-md-4 py-md-5","children":[
+                              {"tag":"img","src":"image/contact-email.svg","class":"img-fluid rounded-start","alt":"...","html":""}
+                            ]},
+                          {"tag":"div","class":"col-md-7 py-md-5","children":[
+                              {"tag":"div","class":"card-body","children":[
+                                  {"tag":"h5","class":"card-title","children":[
+                                      {"tag":"i","class":"fas fa-envelope-open-text text-primary","html":""}
+                                    ]},
+                                  {"tag":"p","class":"card-text","html":"Your name and Email to talk about the business whatever in what time."},
+                                  {"tag":"a","href":"mailto:binserv@gmail.com","class":"card-link text-decoration-none btn btn-primary px-5 text-white d-block","html":"EMAIL US"}
+                                ]}
+                            ]}
+                        ]}
+                    ]}
+                ]},
+              {"tag":"div","class":"col-md-6 p-0","children":[
+                  {"tag":"div","class":"card mb-3 border-0 shadow","children":[
+                      {"tag":"div","class":"row g-0 justify-content-md-center m-2","children":[
+                          {"tag":"div","class":"col-md-4 py-md-5","children":[
+                              {"tag":"img","src":"image/contact-web.svg","class":"img-fluid rounded-start","alt":"...","html":""}
+                            ]},
+                          {"tag":"div","class":"col-md-7 py-md-5","children":[
+                              {"tag":"div","class":"card-body","children":[
+                                  {"tag":"h5","class":"card-title","children":[
+                                      {"tag":"i","class":"fas fa-globe text-primary","html":""}
+                                    ]},
+                                  {"tag":"p","class":"card-text","html":"bookmark in to your browser to check up what update new."},
+                                  {"tag":"a","href":"www.binserv.us","class":"card-link text-decoration-none btn btn-primary px-5 text-white d-block","html":"BOOKMARK"}
+                                ]}
+                            ]}
+                        ]}
+                    ]}
+                ]}
+            ]},
+          {"tag":"div","class":"row","children":[
+              {"tag":"div","class":"col-md-7 p-0","children":[
+                  {"tag":"div","class":"card px-4 border-primary bg-primary","children":[
+                      {"tag":"div","class":"card-body","children":[
+                          {"tag":"div","class":"col-md-12","children":[
+                              {"tag":"h5","class":"card-title mt-4 h3","html":"Get In Touch"},
+                              {"tag":"p","class":"card-text","html":"Leave us a message and we'll get back to you as soon as we can."},
+                              [
+                                {"tag":"input","type":"text","class":"form-control","id":"inputName","placeholder":"Vito Binserv","html":""},
+                                {"tag":"input","type":"text","class":"form-control","id":"inputEmail","placeholder":"binserv@gmail.com","html":""},
+                                {"tag":"input","type":"tel","class":"form-control","id":"inputPhone","placeholder":"+1 786 898 6208","html":""},
+                                {"tag":"textarea","class":"form-control","id":"exampleFormControlTextarea1","rows":"3","html":""},
+                                {"tag":"button","type":"submit","class":"btn btn-dark col-12 font-weight-bold text-white","html":"Submit"}
+                              ],
+                              {"tag":"p","class":"card-text mb-4","html":"With supporting text below as a natural lead-in to additional content."}
+                            ]}
+                        ]}
+                    ]}
+                ]},
+              {"tag":"div","class":"col-md-5 p-0 pt-4","children":[
+                  {"tag":"img","src":"image/contact-us.svg","class":"py-md-5 my-md-5","alt":"","srcset":"","html":""}
+                ]}
+            ]}
+        ]}
+    ]},
+  {"tag":"footer","class":"bg-color mt-5 py-3","children":[
+      {"tag":"div","class":"container","children":[
+          {"tag":"div","class":"col-12","children":[
+              {"tag":"ul","class":"list-unstyled d-md-flex justify-content-between text-white align-items-center","children":[
+                  {"tag":"li","children":[
+                      {"tag":"a","href":"#","children":[
+                          {"tag":"img","src":"image/binserv-footer-2.svg","alt":"","width":"100","height":"64","html":""}
+                        ]}
+                    ]},
+                  {"tag":"li","html":"            © 2021 All rights reserved          "},
+                  {"tag":"li","children":[
+                      {"tag":"a","href":"mailto:binserv@gmail.com","class":"text-white text-decoration-none","html":"              binserv@gmail.com            "}
+                    ]},
+                  {"tag":"li","children":[
+                      {"tag":"a","href":"#","class":"text-white text-decoration-none","html":"              Privacy Policy          "}
+                    ]}
+                ]}
+            ]}
+        ]}
+    ]}
+];
+let obj=new tree_to_obj(document.body,tree_new_bin);
+console.log(obj)
+
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/2.1.0/json2html.min.js"></script>
+     
+
+
+</head>
+
+<body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script> -->
+</body>
+</html>
